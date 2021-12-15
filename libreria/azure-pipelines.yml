@@ -1,0 +1,40 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  buildPlatform: 'any CPU'
+  buildConfiguration: 'Release'
+  major: 1
+  minor: 0
+  
+name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
+- task: NuGetCommand@2
+  inputs:
+    command: 'pack'
+    packagesToPack: '**/*.csproj'
+    versioningScheme: byBuildNumber
+    allowPackageConflicts: false
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'push'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
+    nuGetFeedType: 'internal'
+    publishVstsFeed: '362385b5-dd9b-4c1b-9bdd-0dd9b3c66d8a/022efcce-ae73-42af-a40c-c351bdcc9c8a'
