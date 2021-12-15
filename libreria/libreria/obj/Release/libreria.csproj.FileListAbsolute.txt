@@ -1,0 +1,5 @@
+C:\Temp\libreria\libreria\libreria\bin\Release\libreria.dll
+C:\Temp\libreria\libreria\libreria\bin\Release\libreria.pdb
+C:\Temp\libreria\libreria\libreria\obj\Release\libreria.csproj.CoreCompileInputs.cache
+C:\Temp\libreria\libreria\libreria\obj\Release\libreria.dll
+C:\Temp\libreria\libreria\libreria\obj\Release\libreria.pdb
