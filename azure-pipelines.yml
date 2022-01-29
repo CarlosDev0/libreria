@@ -41,9 +41,10 @@ steps:
 
 
 - task: DotNetCoreCLI@2
+  displayName: "Run Unit Test0"
   inputs:
     command: 'test'
-    arguments: '--configuration $(BuildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=opencover --logger trx'
+    arguments: '--no-build -configuration $(BuildConfiguration)'
     testRunTitle: 'dotnet test'
 
 - task: VSTest@2
