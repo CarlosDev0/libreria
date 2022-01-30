@@ -40,12 +40,7 @@ steps:
 
 
 
-- task: DotNetCoreCLI@2
-  displayName: "Run Unit Test0"
-  inputs:
-    command: 'test'
-    arguments: '--no-build -configuration $(BuildConfiguration)'
-    testRunTitle: 'dotnet test'
+
 
 - task: VSTest@2
   inputs:
