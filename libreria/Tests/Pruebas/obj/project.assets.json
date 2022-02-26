@@ -1256,7 +1256,6 @@
       },
       "Libreria/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
         "compile": {
           "bin/placeholder/Libreria.dll": {}
         },
@@ -4975,11 +4974,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\CARLOS\\Ude@\\Proyecto Integrador II\\Libreria\\Libreria\\Tests\\Pruebas\\Pruebas.csproj",
+      "projectUniqueName": "E:\\CARLOS\\Ude@\\Proyecto Integrador II\\GIT\\libreria\\Tests\\Pruebas\\Pruebas.csproj",
       "projectName": "Pruebas",
-      "projectPath": "E:\\CARLOS\\Ude@\\Proyecto Integrador II\\Libreria\\Libreria\\Tests\\Pruebas\\Pruebas.csproj",
+      "projectPath": "E:\\CARLOS\\Ude@\\Proyecto Integrador II\\GIT\\libreria\\Tests\\Pruebas\\Pruebas.csproj",
       "packagesPath": "C:\\Users\\Carlos Sánchez\\.nuget\\packages\\",
-      "outputPath": "E:\\CARLOS\\Ude@\\Proyecto Integrador II\\Libreria\\Libreria\\Tests\\Pruebas\\obj\\",
+      "outputPath": "E:\\CARLOS\\Ude@\\Proyecto Integrador II\\GIT\\libreria\\Tests\\Pruebas\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5000,8 +4999,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\CARLOS\\Ude@\\Proyecto Integrador II\\Libreria\\Libreria\\Libreria\\Libreria.csproj": {
-              "projectPath": "E:\\CARLOS\\Ude@\\Proyecto Integrador II\\Libreria\\Libreria\\Libreria\\Libreria.csproj"
+            "E:\\CARLOS\\Ude@\\Proyecto Integrador II\\GIT\\libreria\\Libreria\\Libreria.csproj": {
+              "projectPath": "E:\\CARLOS\\Ude@\\Proyecto Integrador II\\GIT\\libreria\\Libreria\\Libreria.csproj"
             }
           }
         }

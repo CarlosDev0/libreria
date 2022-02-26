@@ -1,0 +1,16 @@
+{
+  "Libreria.dll": {
+    "E:\\CARLOS\\Ude@\\Proyecto Integrador II\\Libreria\\Libreria\\Libreria\\Business\\Reservas.cs": {
+      "Libreria.Business.Reservas": {
+        "System.Int32 Libreria.Business.Reservas::GetReserva()": {
+          "Lines": {
+            "9": 1,
+            "10": 1,
+            "11": 1
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

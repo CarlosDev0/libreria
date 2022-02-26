@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kwzWPX8fOYSZfuvR4/q8dSg9CxkJQyOf6S8UoqLmOCfHkrpC4ie1YOJsEvqOua8EzfvoaevBnWob8y8+ezxXug==",
+  "dgSpecHash": "Xh+8zSMFQBiEZCx4zBoOXFEKMC0uJBS7pR4auzdNKlVBMliqeWFb+UK55mPMdePm57wIhyG15roYjSaSm/WQJw==",
   "success": true,
-  "projectFilePath": "E:\\CARLOS\\Ude@\\Proyecto Integrador II\\Libreria\\Libreria\\Tests\\Pruebas\\Pruebas.csproj",
+  "projectFilePath": "E:\\CARLOS\\Ude@\\Proyecto Integrador II\\GIT\\libreria\\Tests\\Pruebas\\Pruebas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Carlos Sánchez\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\Carlos Sánchez\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

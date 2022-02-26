@@ -4,3 +4,9 @@ C:\Temp\libreria\libreria\libreria\obj\Debug\libreria.csproj.AssemblyReference.c
 C:\Temp\libreria\libreria\libreria\obj\Debug\libreria.csproj.CoreCompileInputs.cache
 C:\Temp\libreria\libreria\libreria\obj\Debug\libreria.dll
 C:\Temp\libreria\libreria\libreria\obj\Debug\libreria.pdb
+E:\CARLOS\Ude@\Proyecto Integrador II\GIT\libreria\Libreria\bin\Debug\libreria.dll
+E:\CARLOS\Ude@\Proyecto Integrador II\GIT\libreria\Libreria\bin\Debug\libreria.pdb
+E:\CARLOS\Ude@\Proyecto Integrador II\GIT\libreria\Libreria\obj\Debug\Libreria.csproj.AssemblyReference.cache
+E:\CARLOS\Ude@\Proyecto Integrador II\GIT\libreria\Libreria\obj\Debug\Libreria.csproj.CoreCompileInputs.cache
+E:\CARLOS\Ude@\Proyecto Integrador II\GIT\libreria\Libreria\obj\Debug\libreria.dll
+E:\CARLOS\Ude@\Proyecto Integrador II\GIT\libreria\Libreria\obj\Debug\libreria.pdb

@@ -100,3 +100,10 @@ E:\CARLOS\Ude@\Proyecto Integrador II\Libreria\Libreria\Tests\Pruebas\obj\Debug\
 E:\CARLOS\Ude@\Proyecto Integrador II\Libreria\Libreria\Tests\Pruebas\bin\Debug\netcoreapp3.1\CoverletSourceRootsMapping
 E:\CARLOS\Ude@\Proyecto Integrador II\Libreria\Libreria\Tests\Pruebas\bin\Debug\netcoreapp3.1\Libreria.dll
 E:\CARLOS\Ude@\Proyecto Integrador II\Libreria\Libreria\Tests\Pruebas\bin\Debug\netcoreapp3.1\Libreria.pdb
+E:\CARLOS\Ude@\Proyecto Integrador II\GIT\libreria\Tests\Pruebas\obj\Debug\netcoreapp3.1\Pruebas.csproj.AssemblyReference.cache
+E:\CARLOS\Ude@\Proyecto Integrador II\GIT\libreria\Tests\Pruebas\obj\Debug\netcoreapp3.1\Pruebas.GeneratedMSBuildEditorConfig.editorconfig
+E:\CARLOS\Ude@\Proyecto Integrador II\GIT\libreria\Tests\Pruebas\obj\Debug\netcoreapp3.1\Pruebas.AssemblyInfoInputs.cache
+E:\CARLOS\Ude@\Proyecto Integrador II\GIT\libreria\Tests\Pruebas\obj\Debug\netcoreapp3.1\Pruebas.AssemblyInfo.cs
+E:\CARLOS\Ude@\Proyecto Integrador II\GIT\libreria\Tests\Pruebas\obj\Debug\netcoreapp3.1\Pruebas.csproj.CoreCompileInputs.cache
+E:\CARLOS\Ude@\Proyecto Integrador II\GIT\libreria\Tests\Pruebas\obj\Debug\netcoreapp3.1\Pruebas.dll
+E:\CARLOS\Ude@\Proyecto Integrador II\GIT\libreria\Tests\Pruebas\obj\Debug\netcoreapp3.1\Pruebas.pdb
