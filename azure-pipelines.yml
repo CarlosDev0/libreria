@@ -47,14 +47,14 @@ steps:
   displayName: dotnet test
   inputs:
     command: test
-    arguments: '--configuration $(BuildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura'
+    arguments: '--configuration $(BuildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=coverage'
     projects: 'tests/\*\*/\*.csproj'
     nobuild: true
 
 - task: reportgenerator@5
   displayName: ReportGenerator
   inputs:
-    reports: '$(Build.SourcesDirectory)/tests/\*\*/Pruebas/coverage.json'
+    reports: '$(Build.SourcesDirectory)/Tests/Pruebas/coverage.json'
     targetdir: '$(Build.SourcesDirectory)/CodeCoverage'
     reporttypes: 'HtmlInline\_AzurePipelines;Cobertura;Badges'
     assemblyfilters: '-xunit\*'
