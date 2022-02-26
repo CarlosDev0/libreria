@@ -52,7 +52,7 @@ steps:
       command: 'custom'
       projects: '**/*.sln'
       custom: 'reportgenerator'
-      arguments: '"-reports:$(Agent.TempDirectory)\coverage\coverage.cobertura.xml" "-targetdir:$(Agent.TempDirectory)\coverage\Reports" -tag:$(Build.BuildNumber) "-reporttypes:HTMLInline;HTMLChart;SonarQube"'
+      arguments: '"-reports:$(Agent.TempDirectory)\coverage.json" "-targetdir:$(Agent.TempDirectory)\coverage\Reports" -tag:$(Build.BuildNumber) "-reporttypes:HTMLInline;HTMLChart;SonarQube"'
 
 - task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
