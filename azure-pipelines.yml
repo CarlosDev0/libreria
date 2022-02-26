@@ -53,7 +53,7 @@ steps:
 
 - task: reportgenerator@5
   inputs:
-    reports: 'coverage.json'
+    reports: '/Test/Pruebas/coverage.json'
     targetdir: 'CodeCoverage'
 
 # Publish the code coverage result (summary and web site)
