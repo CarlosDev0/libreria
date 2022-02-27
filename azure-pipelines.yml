@@ -2,25 +2,25 @@
 # Build and test ASP.NET projects.
 # Add steps that publish symbols, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
-
+ 
 trigger:
 - master
-
+ 
 pool:
   vmImage: 'windows-latest'
-
+ 
 variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Debug'
   major: 1
   minor: 0
-
+ 
 name: $(major).$(minor)$(Rev:.rr)
-
+ 
 steps:
 - task: NuGetToolInstaller@1
-
+ 
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
@@ -37,59 +37,31 @@ steps:
     msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:DesktopBuildPackageLocation="$(build.artifactStagingDirectory)\WebApp.zip" /p:DeployIisAppPath="Default Web Site"'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-
-
-
-# Test with Coverage
-
-# Run all tests with "/p:CollectCoverage=true /p:CoverletOutputFormat=cobertura" to generate the code coverage file
-- task: DotNetCoreCLI@2
-  displayName: dotnet test
+ 
+- task: VSTest@2
   inputs:
-    command: test
-    arguments: '--configuration $(BuildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=coverage'
-    projects: 'tests/\*\*/\*.csproj'
-    nobuild: true
-
-- task: reportgenerator@5
-  inputs:
-    reports: '$(Build.SourcesDirectory)/Tests/\*\*/Pruebas/coverage.json'
-    targetdir: 'CodeCoverage'
-
-# Publish the code coverage result (summary and web site)
-# The summary allows to view the coverage percentage in the summary tab
-# The web site allows to view which lines are covered directly in Azure Pipeline
-- task: PublishCodeCoverageResults@1
-  displayName: 'Publish code coverage'
-  inputs:
-    codeCoverageTool: Cobertura
-    summaryFileLocation: '$(Build.SourcesDirectory)/CodeCoverage/Cobertura.xml'
-    reportDirectory: '$(Build.SourcesDirectory)/CodeCoverage'
-
-
-#- task: VSTest@2
-#  inputs:
-#    platform: '$(buildPlatform)'
-#    configuration: '$(buildConfiguration)'
-
-
-
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+ 
+ 
+ 
 - task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
   inputs:
     pollingTimeoutSec: '300'
-
-
+ 
+ 
 - task: NuGetCommand@2
   inputs:
     command: 'pack'
     packagesToPack: '**/*.csproj'
     versioningScheme: byBuildNumber
     allowPackageConflicts: false
-
+ 
 - task: NuGetCommand@2
   inputs:
     command: 'push'
     packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
     nuGetFeedType: 'internal'
     publishVstsFeed: '362385b5-dd9b-4c1b-9bdd-0dd9b3c66d8a/022efcce-ae73-42af-a40c-c351bdcc9c8a'
+ 
