@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Xh+8zSMFQBiEZCx4zBoOXFEKMC0uJBS7pR4auzdNKlVBMliqeWFb+UK55mPMdePm57wIhyG15roYjSaSm/WQJw==",
+  "dgSpecHash": "T83BieRdoDUtqafFicUveOXhM0YLptYd87KHlXjylTuM91tgjbtqjdgQ8ALpQbsmxY6ieSfcvFP8VyzxcgDqHA==",
   "success": true,
   "projectFilePath": "E:\\CARLOS\\Ude@\\Proyecto Integrador II\\GIT\\libreria\\Tests\\Pruebas\\Pruebas.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "C:\\Users\\Carlos Sánchez\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
     "C:\\Users\\Carlos Sánchez\\.nuget\\packages\\nunit\\3.13.1\\nunit.3.13.1.nupkg.sha512",
     "C:\\Users\\Carlos Sánchez\\.nuget\\packages\\nunit3testadapter\\3.17.0\\nunit3testadapter.3.17.0.nupkg.sha512",
+    "C:\\Users\\Carlos Sánchez\\.nuget\\packages\\reportgenerator\\5.0.4\\reportgenerator.5.0.4.nupkg.sha512",
     "C:\\Users\\Carlos Sánchez\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\Carlos Sánchez\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
     "C:\\Users\\Carlos Sánchez\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

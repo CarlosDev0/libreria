@@ -8,6 +8,7 @@ namespace Libreria.Business
     {
         public int GetReserva() {
             Boolean estado = false;
+               
 
             string mensaje = "Error en grupo {1}";
             string conclusion = String.Format(mensaje,"Error 1");
