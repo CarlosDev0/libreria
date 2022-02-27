@@ -13,7 +13,7 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Debug'
-  major: 1
+  major: 2
   minor: 0
  
 name: $(major).$(minor)$(Rev:.rr)
