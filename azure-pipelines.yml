@@ -68,12 +68,13 @@ steps:
     codeCoverageTool: Cobertura
     summaryFileLocation: '$(Build.SourcesDirectory)/CodeCoverage/Cobertura.xml'
     reportDirectory: '$(Build.SourcesDirectory)/CodeCoverage'
+  condition: succeededOrFailed()
 
 - task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
   inputs:
     pollingTimeoutSec: '300'
-  
+  condition: succeededOrFailed()
  
 - task: NuGetCommand@2
   inputs:
@@ -81,11 +82,12 @@ steps:
     packagesToPack: '**/*.csproj'
     versioningScheme: byBuildNumber
     allowPackageConflicts: false
- 
+  condition: succeededOrFailed()
+
 - task: NuGetCommand@2
   inputs:
     command: 'push'
     packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
     nuGetFeedType: 'internal'
     publishVstsFeed: '362385b5-dd9b-4c1b-9bdd-0dd9b3c66d8a/022efcce-ae73-42af-a40c-c351bdcc9c8a'
- 
+  condition: succeededOrFailed()
