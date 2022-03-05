@@ -52,12 +52,28 @@ steps:
      runTestsInIsolation: true
      codeCoverageEnabled: true
 
- 
+- task: reportgenerator@5
+  inputs:
+    reports: '$(Build.SourcesDirectory)/Tests/\*\*/Pruebas/coverage.json'
+    targetdir: 'CodeCoverage'
+  condition: succeededOrFailed()
+#  continueOnError: 
+
+# Publish the code coverage result (summary and web site)
+# The summary allows to view the coverage percentage in the summary tab
+# The web site allows to view which lines are covered directly in Azure Pipeline
+- task: PublishCodeCoverageResults@1
+  displayName: 'Publish code coverage'
+  inputs:
+    codeCoverageTool: Cobertura
+    summaryFileLocation: '$(Build.SourcesDirectory)/CodeCoverage/Cobertura.xml'
+    reportDirectory: '$(Build.SourcesDirectory)/CodeCoverage'
+
 - task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
   inputs:
     pollingTimeoutSec: '300'
-  condition: succeededOrFailed()
+  
  
 - task: NuGetCommand@2
   inputs:
