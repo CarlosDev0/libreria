@@ -66,8 +66,8 @@ steps:
   displayName: 'Publish code coverage'
   inputs:
     codeCoverageTool: Cobertura
-    summaryFileLocation: '$(Build.SourcesDirectory)/CodeCoverage/Cobertura.xml'
-    reportDirectory: '$(Build.SourcesDirectory)/CodeCoverage'
+    summaryFileLocation: '$(Agent.TempDirectory)/CodeCoverage/Cobertura.xml'
+    reportDirectory: '$(Agent.TempDirectory)/CodeCoverage'
   condition: succeededOrFailed()
 
 - task: SonarCloudAnalyze@1
