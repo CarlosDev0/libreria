@@ -54,7 +54,7 @@ steps:
 
 - task: reportgenerator@5
   inputs:
-    reports: '$(Build.SourcesDirectory)/Tests/\*\*/Pruebas/coverage.json'
+    reports: '$(Build.SourcesDirectory)/CodeCoverage/\*\*/*'
     targetdir: 'CodeCoverage'
   condition: succeededOrFailed()
 #  continueOnError: 
