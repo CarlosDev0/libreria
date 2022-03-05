@@ -54,7 +54,7 @@ steps:
 
 - task: reportgenerator@5
   inputs:
-    reports: '$(Build.SourcesDirectory)/CodeCoverage/*.trx'
+    reports: '$(Agent.TempDirectory)/CodeCoverage/*.trx'
     targetdir: 'CodeCoverage'
   condition: succeededOrFailed()
 #  continueOnError: 
